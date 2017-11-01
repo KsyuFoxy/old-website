@@ -1,0 +1,804 @@
+@font-face{
+    font-family: "Century Gothic";
+    src: url('/static/fonts/Century_Gothic.TTF'),
+    url('/static/fonts/Century_Gothic.TTF');
+}
+@font-face{
+    font-family: "Asenine Wide";
+    src: url('/static/fonts/ASENW.ttf'),
+    url('/static/fonts/ASENW.ttf');
+}
+
+body {
+    font-family: 'Century Gothic', Regular;
+    background: #080411;
+    color: #ffffff;
+
+}
+
+a {
+    color: #6c6971;
+}
+
+a:focus {
+    text-decoration: none;
+    color: #6c6971;
+
+}
+a:hover {
+    color: #ffffff;
+    background-color: #755;
+
+}
+
+header {
+    margin: 0 auto;
+
+}
+
+.container {
+    position: relative;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    color: #a3a4c5;
+    opacity: 0.1;
+    bottom: 0;
+}
+
+#container {
+    position: relative;
+    top: -100px;
+    width: 80%;
+    height: 450px;
+    float: right;
+    z-index: -1;
+}
+.LogoCircle {
+    float:left;
+}
+.LogoCircle-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.LogoEffect {
+   position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+img.LogoImg {
+    width: 100%;
+}
+img.LogoEffect {
+    width: 100%;
+}
+img.AboutPageImgSmall {
+        width: 90%;
+    }
+
+.profession-small {
+    margin-left: 25px;
+    margin-top: -12px;
+    color: #a3a4c5;
+}
+
+.DotsEffect {
+    animation: Orbit 6s linear 1;
+}
+.ThreeCEffect {
+    animation: Orbit 8s linear 1;
+}
+@keyframes Orbit {
+    0% {
+    transform: rotate(180deg);
+}
+    100% {
+    transform: rotate(0deg)}
+}
+
+.LotsCEffect {
+     @include circle(radius: 0);
+     animation: SecondOrbit 10s linear 1;
+}
+@keyframes SecondOrbit {
+    0% {
+    transform: rotate(0deg);
+}
+    100% {
+    transform: rotate(360deg)}
+}
+.WingsEffect {
+    animation: WingsScale 10s linear 1;
+}
+@keyframes WingsScale {
+    0% {
+        transform: scale(0.5,0.5);
+    }
+}
+.LightEffect {
+    display: none;
+    animation: LightScale 2s linear 1;
+     animation-delay: 12s;
+
+}
+@keyframes lightScale {
+    0% {
+        transform: scale(0.1,0.1);
+    }
+    50% {
+        transform: scale(1.5,1.5);
+    }
+     100% {
+        transform: scale(1,1);
+    }
+}
+
+
+header h1 {
+    color: white;
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+header h1.Logo, h1.Logo-small {
+    font-family: 'Asenine Wide', Regular;
+    font-size: 52px;
+    margin-left: 30px;
+    z-index: 1;
+}
+
+
+
+.container-nav>.collapsing {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: #100c19;
+}
+.container-nav>.navbar-collapse.in {
+    position: absolute;
+    display: block;
+    background-color: #100c19;
+    opacity: 0.9;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar-nav li a:hover {
+    background: transparent;
+}
+
+
+.navbar-toggle {
+    border-color: #ffffff;
+    margin-top: -60px;
+    margin-right: 30px;
+
+}
+.navbar-toggle .icon-bar {
+    background-color: #ffffff;
+    width: 30px;
+}
+
+p.profession {
+    color: #a3a4c5;
+    margin: -20px 0 0 380px;
+    z-index: 1;
+}
+.TextAbout p {
+    font-size: 16px;
+    text-indent: 20px;
+}
+.TextAbout {
+    margin-top: 120px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 8px 0 0;
+    padding: 0;
+}
+
+
+li.main-menu > a:hover {
+    background-color: transparent;
+}
+.main-menu.active a {
+    color: #ffffff;
+}
+.home-page-logo-container {
+    z-index: 1;
+}
+.home-page-logo:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-menu {
+    margin-top: 30px;
+     z-index: 1;
+}
+
+.contacts-page {
+    top: 110px;
+    z-index: 1;
+}
+
+.contacts {
+    text-align: center;
+}
+
+.contacts-disc {
+    width: 600px;
+    margin: 40px 0 40px -40px;
+    font-size: 16px;
+    text-align: center;
+}
+img.ContactPageImg {
+    width: 190%;
+    margin-left: -275px;
+    margin-top: -80px;
+    z-index: -1;
+}
+img.AboutPageImg {
+    width: 170%;
+    z-index: -10;
+}
+
+.MyPhoto {
+    width: 70%;
+    margin-left: 65px;
+    margin-top: 8px;
+}
+
+.portfolio-container {
+    width: 90%;
+    margin: 50px auto 0 auto;
+}
+
+.flex-row {
+    display: flex;
+    align-content: center;
+}
+.portfolio-img {
+    width: 100%;
+}
+.flex-col {
+    padding: 0;
+    margin-bottom: 15px;
+    margin-right: 9px;
+}
+
+.flex-col-People {
+    position: relative;
+}
+
+.flex-col-People a {
+    position: relative;
+    display: block;
+}
+
+.flex-col-other {
+    position: relative;
+}
+
+.flex-col-other a{
+    position: relative;
+    display: block;
+
+}
+.flex-col a:hover {
+    background: black;
+}
+.flex-col a:hover img {
+    background-color: black;
+    opacity: 0.3;
+}
+.flex-col a:hover span {
+    display: block;
+}
+
+.flex-col span {
+     position: absolute;
+     display: none;
+     font-size: 30px;
+     text-decoration: none;
+}
+.flex-col-People span {
+     width: 100px;
+    height: 50px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #ffffff;
+}
+
+.flex-col-other span {
+    width: 90px;
+    height: 20px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #ffffff;
+}
+
+.ContactContainer {
+    top: 60px;
+}
+
+.Container-ContactImg {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+.Container-ContactImg a {
+    display: block;
+    width: 80px;
+    color: transparent;
+    position: relative;
+}
+
+.Container-ContactImg a:hover {
+    background-color: transparent;
+
+}
+.ContactImg {
+    position: absolute;
+}
+.Container-ContactImg img:hover {
+    width: 50px;
+    top: -10px;
+    left: -5px;
+}
+
+.container-works {
+    display: flex;
+    width: 90%;
+    margin-left: 150px;
+    margin-top: 90px;
+}
+
+.container-works-name {
+    flex: 1;
+}
+.container-work-img {
+    flex: 2;
+}
+
+.container-works h2 {
+  margin-bottom: 30px;
+}
+
+.container-works-name li {
+    list-style: none;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.container-works-name ul {
+    padding-left: 0;
+}
+
+.container-works-name a:hover {
+    text-decoration: none;
+}
+
+.container-works-name li:focus {
+    list-style: disc;
+}
+
+.container-works-name li:hover{
+    list-style: disc;
+}
+.container-work-img img {
+    width: 70%;
+}
+
+.Photo-class {
+    text-align: center;
+    margin: 40px auto 20px auto;
+}
+
+.Photos-name {
+    position: inherit;
+}
+
+.PhotoStructure {
+    box-sizing: border-box;
+    text-align: center;
+}
+.PhotoStructure img {
+    cursor: pointer;
+}
+.Nature-Img-Vertical:hover, .Nature-Img-Horizontal:hover, .Nature-Img:hover {
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+.Nature-Img {
+    width: 46.5%;
+    margin-bottom: 3px;
+}
+
+.Nature-Img-Vertical {
+    width: 32.9%;
+    margin-bottom: 3px;
+}
+.Nature-Img-Horizontal {
+   width: 60%;
+    margin-bottom: 3px;
+}
+
+#myBtn {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+#myBtn img {
+    margin-bottom: 0;
+}
+#myBtn:hover {
+    background-color: black;
+    opacity: 0.8;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.75);
+}
+
+/* Modal Content/Box */
+.modal-content {
+    position: absolute;
+    background-color: #ffffff;
+    top: 10px;
+    border: 1px solid #888;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.modal-img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.modal-img:hover {
+    cursor: zoom-out;
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    right: 20px;
+    color: #ffffff;
+    opacity: 0.9;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.close:hover,
+.close:focus {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:767px) {
+    .profession, .Logo, .nav-menu {display: none;}
+    .portfolio-img {display: none;}
+}
+
+@media screen and (min-width:768px) {
+    .profession-small, .Logo-small, .navbar-header {display: none;}
+    .portfolio-imgSmall {display: none;}
+}
+
+
+@media screen and (max-width:650px) {
+    .MyPhotoImg {
+        min-height: 200px;
+        width: 100%;
+    }
+    .AboutPageImg {
+        display: none;
+    }
+    #container {
+        top: -40px;
+    }
+    .navbar-nav li a {
+    padding: 40px 0;
+    text-align: center;
+    font-size: 30px;
+    }
+ .TextAbout {
+        width: auto;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+ .TextAbout p {
+       font-size: 14px;
+    }
+    .container-works {
+        display: block;
+        width: 100%;
+        position: relative;
+        margin-top: -30px;
+        margin-left: 0;
+    }
+    .container-works-name {
+        display: table;
+        margin: 0 auto;
+    }
+    .container-work-img {
+        text-align: -webkit-center;
+        margin-top: 15px;
+    }
+    .ContactContainer {
+        top: 120px;
+    }
+    .contacts-page {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+    .contacts-page h2 {
+        font-size: 30px;
+    }
+    .contacts-page p {
+        font-size: 14px;
+    }
+    .Container-ContactImg img {
+        width: 40%;
+    }
+    .contacts-disc {
+        margin: 20px 0 30px 0px;
+    }
+    .ContactPageImgDiv {
+        position: absolute;
+        z-index: -2;
+    }
+    img.ContactPageImg {
+        width: 90%;
+        margin-left: 78px;
+        margin-top: -160px;
+    }
+    .flex-row {
+        display: block;
+        width: 65%;
+       margin: auto;
+    }
+    .portfolio-imgSmall {
+        width: 100%;
+    }
+    .flex-col span {
+        text-align: center;
+     font-size: 20px;
+    }
+      .flex-col-People {
+        display: none;
+    }
+    .flex-col-Big {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:651px) and (max-width:767px) {
+    .container {
+        margin: 0;
+    }
+     #container {
+        top: -40px;
+    }
+    .AboutPageImg {
+        display: none;
+    }
+    .navbar-nav li a {
+    padding: 40px 0;
+    text-align: center;
+    font-size: 30px;
+    }
+    .TextAbout {
+        width: auto;
+        margin-top: 0;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+    .TextAbout p {
+       font-size: 14px;
+    }
+    .container-works {
+        display: block;
+        width: 100%;
+        position: relative;
+        margin-top: -20px;
+        margin-left: 0;
+    }
+    .container-works-name {
+        display: table;
+        margin: 0 auto;
+    }
+    .container-work-img {
+        text-align: -webkit-center;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+     .ContactContainer {
+        top: 120px;
+    }
+    .contacts-page {
+        position: absolute;
+        top: 50px;
+        z-index: -1;
+    }
+    .contacts-page h2 {
+        font-size: 35px;
+    }
+    .contacts-page p {
+        font-size: 16px;
+    }
+    .Container-ContactImg img {
+        width: 40%;
+    }
+    .contacts-disc {
+        margin: 30px 0 40px 30px;
+    }
+    .ContactPageImgDiv {
+        position: absolute;
+        z-index: -2;
+    }
+    img.ContactPageImg {
+        width: 90%;
+        margin-left: 78px;
+        margin-top: -160px;
+    }
+    .portfolio-container {
+       display: block;
+    }
+
+    .flex-row {
+        display: block;
+        width: 65%;
+       margin: auto;
+    }
+    .flex-col span {
+        text-align: center;
+     font-size: 30px;
+    }
+    .portfolio-imgSmall {
+        width: 100%;
+    }
+    .flex-col-People {
+        display: none;
+    }
+    .flex-col-Big {
+        display: none;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    header h1.Logo {
+        font-size: 40px;
+        margin-left: 20px;
+    }
+    p.profession {
+        font-size: 11px;
+        margin-left: 300px;
+    }
+    .navbar-nav li a {
+        padding: 7px;
+    }
+    .AboutPage .MyPhotoImg img.AboutPageImg {
+        width: 200%;
+    }
+    .container {
+        width: auto;
+        top: 60px;
+        margin: 0 15px;
+    }
+    .container-works h2 {
+       margin-top: 10px;
+    }
+    .AboutPage .TextAbout {
+        margin-left: 0;
+        margin-top: 60px;
+    }
+    .TextAbout p {
+       font-size: 14px;
+    }
+     .ContactContainer {
+        top: 120px;
+    }
+    .contacts-page {
+        position: absolute;
+        top: -40px;
+        left: -140px;
+        z-index: -1;
+    }
+    .contacts-disc {
+        width: auto;
+        text-align: center;
+        margin: 30px 0;
+    }
+    .ContactPageImgDiv {
+        width: auto;
+        position: absolute;
+        z-index: -2;
+    }
+    img.ContactPageImg {
+        width: 100%;
+        margin-left: 78px;
+        margin-top: -195px;
+    }
+    .flex-col-Small {
+        display: none;
+    }
+
+}
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .col-md-8 {
+        width: 60%;
+    }
+    .col-md-4 {
+        width: 40%;
+    }
+    header h1.Logo {
+        font-size: 44px;
+    }
+    p.profession {
+        margin-left: 340px;
+    }
+    .container-works h2 {
+       margin-top: 10px;
+    }
+    .MyPhotoImg {
+        top: 40px;
+    }
+    .container {
+        width: auto;
+    }
+    img.ContactPageImg {
+        width: 160%;
+        margin-left: -250px;
+        margin-top: -83px;
+    }
+    .contacts-page {
+        top: 110px;
+    }
+    .flex-col-Small {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    .flex-col-Small {
+        display: none;
+    }
+}
