@@ -1,12 +1,12 @@
 @font-face{
     font-family: "Century Gothic";
-    src: url('/static/fonts/Century_Gothic.TTF'),
-    url('/static/fonts/Century_Gothic.TTF');
+    src: url('./static/fonts/Century_Gothic.TTF'),
+    url('./static/fonts/Century_Gothic.TTF');
 }
 @font-face{
     font-family: "Asenine Wide";
-    src: url('/static/fonts/ASENW.ttf'),
-    url('/static/fonts/ASENW.ttf');
+    src: url('./static/fonts/ASENW.ttf'),
+    url('./static/fonts/ASENW.ttf');
 }
 
 body {
